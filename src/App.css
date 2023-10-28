@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+* {
+  background-color: #ffffff;
+  margin: 2px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 18px;
+  font-weight: bolder;
+  font-size: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lowtag {
+  margin-top: 1px;
+  font-size: 9px;
+  letter-spacing: 8.5px;
+  border-bottom: 1px solid #00000029;
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchDetails {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 1px solid #00000029;
+  padding-bottom: 20px;
+}
+input {
+  padding: 0 10px;
+  text-align: left;
+  transition-property: box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  background-color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #dae3f3;
+  border-radius: 0px;
+  color: #272c34;
+  width: 100%;
+  cursor: text;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-style: normal;
+  height: 30px;
+}
+input:hover {
+  box-shadow: 0px 2px 4px rgb(39 44 52 / 12%);
+}
+input:focus {
+  transition-property: border-color, box-shadow, background;
+  border-color: #39414d;
+  outline: 0px;
+  box-shadow: 0 0 0 3px #c5d2e7;
+}
+button {
+  display: inline-block;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 13px;
+  height: 30px;
+  background-color: #0000000d;
+  color: #0e0e10;
+  padding: 0 10px;
+}
+button:hover {
+  background-color: #0000001a;
+}
+.mainhead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.sub-main-head-1 > p {
+  font-size: 25px;
+}
+.sub-main-head-2 {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 45px;
+}
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+thead {
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+table > tr,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 60px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkboxarea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkbox {
+  width: 100px;
+  border: none;
+  margin: 10px;
+  padding: 0 10px;
+  text-align: left;
+  border-style: none;
+  cursor: pointer;
+  height: 30px;
 }
